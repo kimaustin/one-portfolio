@@ -13,7 +13,6 @@ export const homeObj1 = {
 
     //TODO for organizing components with columns by t/f which columns start
     imgStart: false,
-    img: require('../../imgs/svg-1.svg').default,
     alt: 'Car',
     dark: false,
     // for the button styling, but can be used for other element styling.
@@ -37,7 +36,6 @@ export const homeObj2 = {
 
     // for organizing components with columns by t/f which columns start
     imgStart: true,
-    img: require('../../imgs/svg-1.svg').default,
     alt: 'Car',
     dark: true,
     // for the button styling, but can be used for other element styling.

@@ -2,9 +2,15 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 
 export const Container = styled.div`
-    width: 100vw;
+    /* width: 100vw; */
+    position: fixed;
+    z-index: 999;
     height: 100vh; 
     cursor: crosshair;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 
     /* @media screen and (max-width: 768px) {
         left: 0;
@@ -22,28 +28,46 @@ export const Container = styled.div`
 `
 
 export const BotSection = styled.div`
-    display: flex;
+    /* display: flex; */
     position: fixed;
-    bottom: 2.5rem;
-    right: calc(7.15vw - 2.55rem);
+    bottom: calc(3.8vh + 1px);
+    right: calc(3.55vw);
 
-    height: 25vh;
-    width: 3.5rem;
+    /* height: 25vh; */
+    width: 2.75rem;
 
     background: #FFFDFA;
     border: 1px solid #201D17;
    
     overflow: hidden;
-    cursor: url("/imgs/c_main.svg"), auto;
 
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    text-align: right;
 
-    font-family: "JejuMyeongjo";
-    font-size: 1.2rem;
-    padding-right: .95rem;
-    padding-top: 1rem;
-    letter-spacing: -.015rem;
+    padding-right: .62rem;
+    padding-bottom: .9rem;
+    padding-top: 3rem;
+    /* letter-spacing: .05rem; */
+
+    a {
+        font-family: "JejuMyeongjo";
+        font-size: 1.2rem;
+        color: #201D17;
+    }
+
+    transition: 0.15s all ease-in-out;
+
+    &:hover {
+        background: blue;
+        cursor: pointer;
+
+        a {
+        color: white;
+
+        }
+    }
+
 `
 
 export const TopSection = styled.div`
@@ -53,8 +77,8 @@ export const TopSection = styled.div`
     right: calc(7.15vw - 2.55rem);
     right: calc(3.55vw);
 
-    height: 45vh;
-    width: 3rem;
+    /* height: 45vh; */
+    width: 2.75rem;
 
     background: #FFFDFA;
     border: 1px solid #201D17;
@@ -69,9 +93,10 @@ export const TopSection = styled.div`
 
     font-family: "JejuMyeongjo";
     font-size: 1.17rem;
-    padding-right: .77rem;
-    padding-top: 1.15rem;
-    letter-spacing: -.015rem;
+    padding-right: .65rem;
+    padding-top: 1.1rem;
+    padding-bottom: 5rem;
+    /* letter-spacing: -.015rem; */
 `
 
 export const HoverContainer = styled.div`

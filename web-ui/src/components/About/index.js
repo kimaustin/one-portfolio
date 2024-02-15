@@ -150,7 +150,7 @@ const About = ({ toggle, aboutToggle }) => {
           }}
         >
           Built with React + Elixir. <br />
-          Last Updated 12/20/21.
+          Last Updated 2/15/21.
         </Styled2>
 
         <Content>
@@ -167,7 +167,7 @@ const About = ({ toggle, aboutToggle }) => {
               delay: 0.2
             }}
             >
-            Hi, I’m a multi-disciplinary designer and developer with a passion for creating meaningful and beautiful experiences. I graduated from Northeastern University in May of 2021 with a bachelors of Computer Science and Design, and since then, have been working on multiple web and graphic design projects in varying fields. 
+            Reality Composer — The Wandering Bateman — 호연 — Bachelors of Computer Science and Design at Northeastern University
           </Desc>
           <Desc
             as={motion.div}
@@ -182,7 +182,7 @@ const About = ({ toggle, aboutToggle }) => {
               delay: 0.25
             }}
             >
-            My experience in both design and software development allows me to use my visual intuition and development skills to build engaging experiences, and I’m always looking for new and unique web technologies, patterns, and visual styles to try out myself.
+              Multi-disciplinary designer, developer, composer, artist with a passion for building meaningful experiences. Passionate about new technologies, patterns, systems, and sounds.
           </Desc>
           <Desc
             as={motion.div}
@@ -197,7 +197,7 @@ const About = ({ toggle, aboutToggle }) => {
               delay: 0.3
             }}
           >
-            Ever since I was little, I’ve loved creating things with my hands and digitally, with hobbies stretching from photography, music, and fashion. I'm still constantly on the lookout for different creative outlets, and love learning new things every day.
+            Currently into : FSOL, puerh, strawberry-player, buggy g. riphead, go, plexus.earth
           </Desc>
           <Links
             as={motion.div}
@@ -212,12 +212,11 @@ const About = ({ toggle, aboutToggle }) => {
               delay: .85
             }}
             >
-            <Social onClick={() => window.open("imgs/ResumeFall2021.pdf")} target="_blank">Resume</Social>
+            <Social onClick={() => window.open("imgs/austink_cv.pdf")} target="_blank">Resume</Social>
             <Social onClick={() => window.open("https://www.linkedin.com/in/austinkim072775/")} target="_blank">LinkedIn</Social>
-            <Social onClick={() => window.open("https://www.instagram.com/nektine/")} target="_blank">Instagram</Social>
-            <Social onClick={() => window.open("https://open.spotify.com/user/122352291?si=4d4715d1bbe74146")} target="_blank">Spotify</Social>
+            <Social onClick={() => window.open("https://www.instagram.com/reality.composer/")} target="_blank">Instagram</Social>
+            <Social onClick={() => window.open("https://www.are.na/reality-composer/channels")} target="_blank">Are.na</Social>
             <Social onClick={() => window.open("mailto:nektinemedia@gmail.com")} target="_blank">Email</Social>
-            <Social onClick={() => window.open("tel:+17705954256")} target="_blank">Phone</Social>
           </Links>
         </Content>
 
@@ -229,7 +228,7 @@ const About = ({ toggle, aboutToggle }) => {
           variants={imgVariants}
           transition={pageTransition}
           >
-            <img src={"imgs/me.jpeg"} style={{display: 'block'}} onerror='this.style.display = "none"' alt={'picture'} id="me!"></img>
+            <img src={"imgs/me.jpeg"} style={{display: 'block'}} onError='this.style.display = "none"' alt={'picture'} id="me!"></img>
         </ProfileContainer>
       </Container>
   );

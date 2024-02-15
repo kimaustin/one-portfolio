@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-route
 import GlobalFonts from './fonts/fonts';
 import { motion, AnimatePresence } from "framer-motion";
 
-import Home from "./components/Home";
 import Main from "./components/Main";
 import Navigation from "./components/Navigation";
 import Status from "./components/Status";

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { keyframes } from "styled-components";
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
@@ -13,9 +12,9 @@ export const Container = styled.div`
 
     background: #FFFDFA;
 
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
     cursor: url("../imgs/c_main.svg"), crosshair;
     cursor: crosshair;
@@ -23,12 +22,13 @@ export const Container = styled.div`
     img {
         /* max-height: 35vh; */
         position: absolute;
-        left: 42.5%;
-        top: 50%;
-        transform: translate(0, -52%);
-        width: 15vw;
-
-        max-height: 37vh;
+        left: 49.75vw;
+        bottom: 54vh;
+        /* transform: translate(0, -52%); */
+        /* width: 25vw; */
+        max-width: 30vw;
+        height: 43vh;
+        /* max-height: 46vh; */
         /* max-width: 17.5vw; */
         /* width: 18vw; */
         object-fit: cover;
@@ -43,23 +43,31 @@ export const Header = styled.p`
     position: relative;
     color: #201D17;
 
-    font-size: 14vw;
+    font-size: 120px;
     font-family: "CG LI";
     font-kerning: auto;
-    letter-spacing: -.4vw;
+    letter-spacing: -.3vw;
+    line-height: 110%;
 
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
     position: absolute;
-    left: 0;
-    top: calc(50% - 23.2vw);
+    left: 49vw;
+    /* top: calc(50% - 23.2vw); */
+    /* bottom: 220px; */
+    top: 50vh;
     transform: translate(0, -50%);
-    width: 100vw;
+    height: fit-content;
+    /* width: 100vw; */
 
     /* padding-bottom: 12vw; */
 
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  
 `
 
 export const MainImg = styled.div`
@@ -81,6 +89,8 @@ export const MainImg = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    /* border: 1px solid black; */
 
     img {
         /* max-height: 35vh; */
@@ -96,24 +106,27 @@ export const MainDesc = styled.div`
     /* width: 23%; */
     color: #201D17;
 
-    font-size: 3vh;
+    font-size: 22px;
     /* font-size: 2vw; */
     font-family: "JejuMyeongjo";
-    letter-spacing: -.03rem;
-    line-height: 108%;
+    letter-spacing: 0rem;
+    line-height: 125%;
 
-    padding-bottom: 2rem;
+    padding-left: 14px;
+    padding-left: 14px;
     /* position: absolute;
     top: 50%;
     transform: translate(0, -50%); */
 
     /* 2.59 rem */
-    position: absolute;
-    left: 0;
-    top: calc(50% + 18vh);
+    /* position: absolute; */
+    /* left: 50.25vw; */
+    /* top: calc(100vh - 284px); */
+    /* bottom: 150px; */
     /* top: calc(50% - 1.295rem); */
     transform: translate(0, -50%);
-    width: 100vw;
+    width: 75%;
+
 
     /* padding-top: 10.1vw; */
 `
@@ -175,11 +188,14 @@ export const ButtonContainer = styled.div`
     bottom: 2.5rem;
     z-index: 999; */
 
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    left: 0;
-    top: 0;
+    padding-top: 26px;
+    /* position: fixed; */
+    /* height: 100vh; */
+    /* left: 50.25vw; */
+    /* top: 0; */
+    /* bottom: 5vh; */
+    /* width: fit-content; */
+    letter-spacing: 0;
 
     @media screen and (max-width: 811px) {
         /* padding-left: 2%; */
@@ -192,45 +208,45 @@ export const ButtonContainer = styled.div`
 
 export const DownButton = styled(LinkRouter)`
     /* position: absolute; */
-    position: relative;
+    /* position: relative; */
     /* left: 0; */
     /* top: 0; */
     /* width: 100; */
     /* bottom: 42vh; */
     /* margin-top: 2rem; */
 
-    padding-left: .95rem;
-    padding-top: .45rem;
-    padding-right: .95rem;
-    padding-bottom: .5rem;
+    /* padding-left: .95rem; */
+    /* padding-top: .45rem; */
+    /* padding-right: .95rem; */
+    /* padding-bottom: .5rem; */
 
-    font-size: 1.7vh;
+    font-size: 22px;
     font-family: 'JejuMyeongjo';
-    /* letter-spacing: -.01rem; */
+    letter-spacing: 0.5px;
     /* border-bottom: 1px solid #201D17; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
 
     /* border: 1px solid blue; */
 
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
     opacity: 1;
-    transition: .15s all ease-in-out;
+    transition: .12s all ease-in-out;
     /* background: #FFFDFA; */
     color: #201D17;
 
-    position: absolute;
+    /* position: absolute; */
     /* left: 0; */
-    top: calc(60% + 21vh);
-    left: 43vw;
+    /* top: calc(60% + 21vh); */
+    /* left: 43vw; */
     /* top: 100%; */
     /* top: calc(50% + 18%); */
     /* transform: translate(0, -50%); */
     /* width: 100vw; */
-    width: 14vw;
+    /* width: 14vw; */
 
     cursor: pointer;
     
@@ -238,8 +254,8 @@ export const DownButton = styled(LinkRouter)`
         /* color: #FDFEF5;
         background: #201D17; */
         /* transform: skew(-2deg); */
-        transform: rotateZ(10deg);
         opacity: 0.5;
+        letter-spacing: 1px;
     }
 
     @media screen and (max-width: 811px) {
@@ -252,6 +268,21 @@ export const DownButton = styled(LinkRouter)`
         font-size: 1rem;
     }
 `;
+
+export const Desc = styled.div`
+    position: fixed;
+    left: 50vw;
+    bottom: 3.7vh;
+
+    font-size: 13px;
+    font-family: 'JejuMyeongjo';
+    letter-spacing: 2px;
+    color: gray;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+`
 
 export const lilMove = styled.p`
 

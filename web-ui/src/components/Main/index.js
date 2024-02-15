@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { ThemeProvider } from "styled-components";
 import { motion } from "framer-motion";
-import { ProgressiveImage } from "react-progressive-image";
 
-import { Container, BodySection, WorksImageContainer, BasicTxt1, BasicTxt2, SelectedLabel, Divider, Divider2, MainBio, Name, Kim, DownButton, FilterPreview, FilterContent, SDTypeHover, SDContent, UXTypeHover, UXContent, TypeHover, Marquee, ImageContainer, Styled, HoverName, ArrowAnim, SelectedWorks, WorkItem, ItemIndex, ItemDetail, SelectedListContainer, ButtonContainer, Header, MainImg, MainDesc, lilMove } from './MainElements';
+import { Container, BodySection, WorksImageContainer, BasicTxt1, BasicTxt2, SelectedLabel, Divider, Divider2, MainBio, Name, Kim, DownButton, FilterPreview, FilterContent, SDTypeHover, SDContent, UXTypeHover, UXContent, TypeHover, Marquee, ImageContainer, Styled, HoverName, ArrowAnim, SelectedWorks, WorkItem, ItemIndex, ItemDetail, SelectedListContainer, ButtonContainer, Header, MainImg, MainDesc, lilMove, Desc } from './MainElements';
 
 const Main = ({projects}) => {
         
@@ -13,13 +12,11 @@ const Main = ({projects}) => {
     const descVariants = {
         initial: {
             y: '50vh',
-            x: 0,
             opacity: 0,
           },
           in: {
             y: '0vh',
             opacity: 1,
-            x: 0,
             transition: {
               type: "tween",
               ease: [0.87, 0, 0.13, 1],
@@ -29,20 +26,22 @@ const Main = ({projects}) => {
           },
           out: {
             y: '50vh',
-            x: '0'
+            opacity: 0,
+            transition: {
+              delay: 0,
+              duration: 1.5
+            }
           }
     }
 
     const imgVariants = {
         initial: {
-          y: '0',
-          x: 0,
+          y: '20vh',
           opacity: 0,
         },
         in: {
-          y: '0vh',
+          y: '0',
           opacity: 1,
-          x: 0,
           transition: {
             type: "tween",
             ease: [0.87, 0, 0.13, 1],
@@ -51,8 +50,7 @@ const Main = ({projects}) => {
             }
         },
         out: {
-          y: '0vh',
-          x: '0',
+          y: '-50vh',
           scale: 0,
           transition: {
             type: "tween",
@@ -66,41 +64,56 @@ const Main = ({projects}) => {
     const btnVariants = {
         initial: {
           y: '50vh',
-          x: 0,
           opacity: 0,
         },
         in: {
           y: '0vh',
           opacity: 1,
-          x: 0,
           transition: {
             type: "tween",
             ease: [0.87, 0, 0.13, 1],
             duration: .9,
-            delay: .65,
+            delay: .75,
             }
         },
         out: {
-          y: '0',
+          y: '50vh',
           opacity: 0,
-          x: '50vw'
         }
     }
+
+    const labelVariants = {
+      initial: {
+        opacity: 0,
+      },
+      in: {
+        opacity: 1,
+        transition: {
+          type: "tween",
+          ease: [0.87, 0, 0.13, 1],
+          duration: .9,
+          delay: 1.2,
+          }
+      },
+      out: {
+        opacity: 0,
+        transition: {
+          delay: 0
+        }
+      }
+  }
 
     const headerVariants = {
         initial: {
           y: '-50vh',
-          x: 0,
           opacity: 0,
         },
         in: {
           y: '0vh',
           opacity: 1,
-          x: 0,
         },
         out: {
           y: '-50vh',
-          x: '0'
         }
     }
 
@@ -156,42 +169,52 @@ const Main = ({projects}) => {
                 >
                     {/* Austin Kim <span style={{fontFamily: "JejuMyeongjo", letterSpacing: "-1.1rem"}}>(호연)</span> */}
                     Welcome
-            </Header>
-            {/* <MainImg> */}
-                {/* <ProgressiveImages
-                    src={require("imgs/me2.jpeg")}
-                > */}
-            <img 
-                as={motion.img} initial="initial"
-                animate="in"
-                exit="out"
-                variants={imgVariants}
-                transition={pageTransition}
-                src={"imgs/me.jpeg"} onerror='this.style.display = "none"' alt={'Me'}>
-            </img>
-                {/* </ProgressiveImage> */}
-            {/* </MainImg> */}
+            {/* </Header> */}
             <MainDesc 
                 as={motion.div} initial="initial"
                 animate="in"
                 exit="out"
                 variants={descVariants}
                 transition={pageTransition}
-                >I'm Austin, a digital <br />designer with a background in Computer <br />Science and Design.<br />
+                >
+                  I'm Austin, a web/UX/UI/graphic designer with a background in Computer Science and Design
+                  <ButtonContainer
+                    as={motion.div}
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={btnVariants}
+                    transition={pageTransition}>
+                    <DownButton to={"/works"}>
+                      <b></b>
+                      Projects →
+                    </DownButton>
+                </ButtonContainer>
             </MainDesc>
-            <ButtonContainer
-                as={motion.div}
-                initial="initial"
+            </Header>
+
+            <Desc
+                    as={motion.div}
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={labelVariants}
+                    transition={pageTransition}>
+                    Portfolio v1
+            </Desc>
+
+            <img 
+                as={motion.img} initial="initial"
                 animate="in"
                 exit="out"
-                variants={btnVariants}
-                transition={pageTransition}>
-                <DownButton to={"/works"}>
-                  → View Projects ←
-                  {/* <lilMove>→</lilMove> */}
-                </DownButton>
-            </ButtonContainer>
-            {/* </MainBio> */}
+                variants={imgVariants}
+                transition={pageTransition}
+                src={"imgs/me2.jpeg"} 
+                // onError='this.style.display = "none"' 
+                // alt={'Me'}
+                >
+            </img>
+            
         </Container>
     );
 };
