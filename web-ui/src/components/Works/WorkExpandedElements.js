@@ -178,14 +178,14 @@ export const MainSub = styled.div`
 `
 
 export const InLink = styled.a`
-    /* position: relative;
+    /* position: relative; */
     width: calc(62.1% - 4rem);
-    top: 0;
+    /* top: 0; */
 
-    margin-left: calc(25.15vw + 6.5rem);
-    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    /* margin-left: calc(25.15vw + 6.5rem); */
+    /* padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'}; */
     padding-left: 10%;
-    padding-right: 10%; */
+    padding-right: 10%;
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;
