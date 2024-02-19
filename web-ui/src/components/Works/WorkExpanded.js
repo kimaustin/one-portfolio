@@ -131,6 +131,7 @@ const WorkExpanded = ({ projects }) => {
         } else {
             if (picture.startsWith('LINK:')) {
                 let link_url = picture.slice('5');
+                let link_preview = picture.slice(5, 30) + "...";
 
                 return (
                     <LinkContainer
@@ -151,7 +152,7 @@ const WorkExpanded = ({ projects }) => {
                     <InLink
                     href={link_url} target='_blank'
                     >
-                        {link_url}
+                        {link_preview}
                     </InLink>
                     </LinkContainer>
                     
