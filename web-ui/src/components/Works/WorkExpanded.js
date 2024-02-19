@@ -4,7 +4,7 @@ import { useLocation, Redirect } from 'react-router-dom';
 import { ListContainer } from './WorkElements';
 import { motion } from "framer-motion";
 import MobileTopButton from '../MobileTopButton';
-import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc, Sub2, MainSub, InLink } from './WorkExpandedElements';
+import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc, Sub2, MainSub, InLink, LinkContainer } from './WorkExpandedElements';
 import e from 'lax.js';
 // import { load_defaults } from '../../api';
 // import { restore_session } from '../../store';
@@ -133,23 +133,28 @@ const WorkExpanded = ({ projects }) => {
                 let link_url = picture.slice('5');
 
                 return (
+                    <LinkContainer
+                        index={index}
+                        isLast={is_last}
+                        as={motion.a}
+                        initial="initial"
+                        animate="in"
+                        variants={imgVariants}
+                        transition={{
+                            type: "tween",
+                            ease: [0.7, 0, 0.13, 1],
+                            duration: 0.85,
+                            delay: (index + 1) * 0.1,
+                        }}
+                        exit="out"
+                        >
                     <InLink
                     href={link_url} target='_blank'
-                    index={index}
-                    isLast={is_last}
-                    as={motion.a}
-                    initial="initial"
-                    animate="in"
-                    exit="out"
-                    variants={imgVariants}
-                    transition={{
-                        type: "tween",
-                        ease: [0.7, 0, 0.13, 1],
-                        duration: 0.85,
-                        delay: (index + 1) * 0.1,
-                    }}>
+                    >
                         {link_url}
                     </InLink>
+                    </LinkContainer>
+                    
                 )
             }
             else if (picture.startsWith('SS2:')) {
@@ -162,14 +167,15 @@ const WorkExpanded = ({ projects }) => {
                     as={motion.div}
                     initial="initial"
                     animate="in"
-                    exit="out"
                     variants={imgVariants}
                     transition={{
                         type: "tween",
                         ease: [0.7, 0, 0.13, 1],
                         duration: 0.85,
                         delay: (index + 1) * 0.1,
-                    }}>
+                    }}
+                    exit="out"
+                    >
                         {sub_name}
                     </Sub2>
                 )
@@ -184,7 +190,6 @@ const WorkExpanded = ({ projects }) => {
                     as={motion.div}
                     initial="initial"
                     animate="in"
-                    exit="out"
                     variants={imgVariants}
                     transition={{
                         type: "tween",
@@ -192,6 +197,7 @@ const WorkExpanded = ({ projects }) => {
                         duration: 0.85,
                         delay: (index + 1) * 0.1,
                     }}
+                    exit="out"
                     >
                         {header_name}
                     </MainSub>
@@ -205,7 +211,6 @@ const WorkExpanded = ({ projects }) => {
                         as={motion.div}
                         initial="initial"
                         animate="in"
-                        exit="out"
                         variants={imgVariants}
                         transition={{
                             type: "tween",
@@ -213,6 +218,7 @@ const WorkExpanded = ({ projects }) => {
                             duration: 0.85,
                             delay: (index + 1) * 0.1,
                         }}
+                        exit="out"
                         >
                         <img src={"/imgs/" + picture} alt={picture} id="project-img"></img>    
                     </PicContainer>
@@ -226,7 +232,6 @@ const WorkExpanded = ({ projects }) => {
                     as={motion.div}
                     initial="initial"
                     animate="in"
-                    exit="out"
                     variants={imgVariants}
                     transition={{
                         type: "tween",
@@ -234,6 +239,7 @@ const WorkExpanded = ({ projects }) => {
                         duration: 0.85,
                         delay: (index + 1) * 0.1,
                     }}
+                    exit="out"
                    >
                        {picture}
                    </PicDesc>
@@ -298,6 +304,8 @@ const WorkExpanded = ({ projects }) => {
             opacity: 0,
             // y: "-100vh",
             scale: 1,
+            delay: 0,
+            duration: 0.3
         },
     };
 
@@ -319,6 +327,8 @@ const WorkExpanded = ({ projects }) => {
             opacity: 0,
             // y: "-100vh",
             scale: 1,
+            delay: 0,
+            duration: 0.5
         },
     };
 
@@ -379,8 +389,8 @@ const WorkExpanded = ({ projects }) => {
                         variants={controlVariants}
                         transition={{type: "tween",
                         ease: [0.7, 0, 0.13, 1],
-                        duration: 0.6,
-                        delay: 0.3}}
+                        duration: 0.5,
+                        delay: 0.2}}
                     >
                         <Back to="/works">Back</Back>
                     </Header>
@@ -391,8 +401,8 @@ const WorkExpanded = ({ projects }) => {
                         variants={controlVariants}
                         transition={{type: "tween",
                         ease: [0.7, 0, 0.13, 1],
-                        duration: 0.6,
-                        delay: 0.3}}
+                        duration: 0.5,
+                        delay: 0.2}}
                     >
                         <PrevWork to={"/" + prev_id + "/works"} currId={work.id}>Previous</PrevWork>
                         <NextWork to={"/" + next_id + "/works"} currId={work.id}>Next</NextWork>

@@ -177,8 +177,25 @@ export const MainSub = styled.div`
 `
 
 export const InLink = styled.a`
+    /* position: relative;
+    width: calc(62.1% - 4rem);
+    top: 0;
+
+    margin-left: calc(25.15vw + 6.5rem);
+    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    padding-left: 10%;
+    padding-right: 10%; */
+
+    font-family: "JejuMyeongjo";
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+`
+
+export const LinkContainer = styled.div`
     position: relative;
     width: calc(62.1% - 4rem);
+    /* max-width: calc(62.1% - 4rem); */
     top: 0;
 
     /* border: 2px solid blue; */
@@ -188,11 +205,6 @@ export const InLink = styled.a`
     /* padding-top: 2rem; */
     padding-left: 10%;
     padding-right: 10%;
-
-    font-family: "JejuMyeongjo";
-    font-size: 1rem;
-    text-align: center;
-    align-items: center;
 `
 
 export const Controls = styled.div`
