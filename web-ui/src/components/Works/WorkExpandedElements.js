@@ -105,7 +105,6 @@ export const PicContainer = styled.div`
     /* width: calc(62.1% - 4rem); */
     /* 100 - (7.1 + 3rem + 27 + 3rem) */
     width: calc(66vw - 6rem);
-
     
     img {
         object-fit: scale-down;
@@ -122,11 +121,11 @@ export const PicDesc = styled.p`
 
     /* border: 2px solid blue; */
 
-    margin-left: calc(25.15vw + 6.5rem);
+    margin-left: calc(25vw + 6.25rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
-    padding-left: 8%;
-    padding-right: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;

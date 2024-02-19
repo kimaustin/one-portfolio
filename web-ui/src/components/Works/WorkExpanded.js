@@ -239,14 +239,17 @@ const WorkExpanded = ({ projects }) => {
                     isLast={is_last}
                     as={motion.div}
                     initial="initial"
-                    animate="in"
-                    variants={imgVariants}
-                    transition={{
-                        type: "tween",
-                        ease: [0.7, 0, 0.13, 1],
-                        duration: 0.85,
-                        delay: (index + 1) * 0.1,
+                    animate={{
+                        opacity: 1,
+                        y: '0',
+                        scale: 1,
+                        transition: {
+                            type: "tween",
+                            ease: [0.7, 0, 0.13, 1],
+                            duration: 0.85,
+                            delay: (index + 1) * 0.1,}
                     }}
+                    variants={imgVariants}
                     exit="out"
                    >
                        {picture}
