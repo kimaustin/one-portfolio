@@ -95,11 +95,6 @@ const WorkExpanded = ({ projects }) => {
             y: "100vh",
             scale: 0.9,
         },
-        in: {
-            opacity: 1,
-            y: '0',
-            scale: 1,
-        },
         out: {
             opacity: 0,
             // y: "-100vh",
@@ -139,14 +134,17 @@ const WorkExpanded = ({ projects }) => {
                         isLast={is_last}
                         as={motion.a}
                         initial="initial"
-                        animate="in"
-                        variants={imgVariants}
-                        transition={{
-                            type: "tween",
-                            ease: [0.7, 0, 0.13, 1],
-                            duration: 0.85,
-                            delay: (index + 1) * 0.1,
+                        animate={{
+                            opacity: 1,
+                            y: '0',
+                            scale: 1,
+                            transition: {
+                                type: "tween",
+                                ease: [0.7, 0, 0.13, 1],
+                                duration: 0.85,
+                                delay: (index + 1) * 0.1,}
                         }}
+                        variants={imgVariants}
                         exit="out"
                         >
                     <InLink
@@ -167,14 +165,17 @@ const WorkExpanded = ({ projects }) => {
                     isLast={is_last}
                     as={motion.div}
                     initial="initial"
-                    animate="in"
-                    variants={imgVariants}
-                    transition={{
-                        type: "tween",
-                        ease: [0.7, 0, 0.13, 1],
-                        duration: 0.85,
-                        delay: (index + 1) * 0.1,
+                    animate={{
+                        opacity: 1,
+                        y: '0',
+                        scale: 1,
+                        transition: {
+                            type: "tween",
+                            ease: [0.7, 0, 0.13, 1],
+                            duration: 0.85,
+                            delay: (index + 1) * 0.1,}
                     }}
+                    variants={imgVariants}
                     exit="out"
                     >
                         {sub_name}
@@ -190,14 +191,17 @@ const WorkExpanded = ({ projects }) => {
                     isLast={is_last}
                     as={motion.div}
                     initial="initial"
-                    animate="in"
-                    variants={imgVariants}
-                    transition={{
-                        type: "tween",
-                        ease: [0.7, 0, 0.13, 1],
-                        duration: 0.85,
-                        delay: (index + 1) * 0.1,
+                    animate={{
+                        opacity: 1,
+                        y: '0',
+                        scale: 1,
+                        transition: {
+                            type: "tween",
+                            ease: [0.7, 0, 0.13, 1],
+                            duration: 0.85,
+                            delay: (index + 1) * 0.1,}
                     }}
+                    variants={imgVariants}
                     exit="out"
                     >
                         {header_name}
@@ -211,14 +215,17 @@ const WorkExpanded = ({ projects }) => {
                         isLast={is_last}
                         as={motion.div}
                         initial="initial"
-                        animate="in"
-                        variants={imgVariants}
-                        transition={{
-                            type: "tween",
-                            ease: [0.7, 0, 0.13, 1],
-                            duration: 0.85,
-                            delay: (index + 1) * 0.1,
+                        animate={{
+                            opacity: 1,
+                            y: '0',
+                            scale: 1,
+                            transition: {
+                                type: "tween",
+                                ease: [0.7, 0, 0.13, 1],
+                                duration: 0.85,
+                                delay: (index + 1) * 0.1,}
                         }}
+                        variants={imgVariants}
                         exit="out"
                         >
                         <img src={"/imgs/" + picture} alt={picture} id="project-img"></img>    

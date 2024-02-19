@@ -125,8 +125,8 @@ export const PicDesc = styled.p`
     margin-left: calc(25.15vw + 6.5rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 12%;
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;
