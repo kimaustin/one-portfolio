@@ -134,6 +134,46 @@ export const PicDesc = styled.p`
     align-items: center;
 `
 
+export const Sub2 = styled.div`
+    position: relative;
+    width: calc(62.1% - 4rem);
+    top: 0;
+
+    /* border: 2px solid blue; */
+
+    margin-left: calc(25.15vw + 6.5rem);
+    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    /* padding-top: 2rem; */
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-family: "JejuMyeongjo";
+    font-size: 1.6rem;
+    letter-spacing: -0.05rem;
+    text-align: center;
+    align-items: center;
+`
+
+export const MainSub = styled.div`
+    position: relative;
+    width: calc(62.1% - 4rem);
+    top: 0;
+
+    /* border: 2px solid blue; */
+
+    margin-left: calc(25.15vw + 6.5rem);
+    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    /* padding-top: 2rem; */
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-family: "JejuMyeongjo";
+    font-size: 1.25rem;
+    opacity: 0.7;
+    text-align: center;
+    align-items: center;
+`
+
 export const Controls = styled.div`
     z-index: 999;
     

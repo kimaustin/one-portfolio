@@ -4,7 +4,7 @@ import { useLocation, Redirect } from 'react-router-dom';
 import { ListContainer } from './WorkElements';
 import { motion } from "framer-motion";
 import MobileTopButton from '../MobileTopButton';
-import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc } from './WorkExpandedElements';
+import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc, Sub2, MainSub } from './WorkExpandedElements';
 import e from 'lax.js';
 // import { load_defaults } from '../../api';
 // import { restore_session } from '../../store';
@@ -128,7 +128,22 @@ const WorkExpanded = ({ projects }) => {
                 <></>
             )
         } else {
-            if (picture.includes("/")) {
+            if (picture.startsWith('LINK:')) {
+                let link_url = picture.slice('5');
+
+                <a href={link_url} target='_blank'>{link_url}</a>
+            }
+            else if (picture.startsWith('SS2:')) {
+                let sub_name = picture.slice('4');
+                
+                <Sub2>{sub_name}</Sub2>
+            }
+            else if (picture.startsWith('SS:')) {
+                let header_name = picture.slice('3');
+                
+                <MainSub>{header_name}</MainSub>
+            }
+            else if (picture.includes("/")) {
                 return (
                     <PicContainer id={index_str}
                         index={index}
