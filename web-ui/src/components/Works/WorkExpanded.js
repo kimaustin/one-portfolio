@@ -131,17 +131,23 @@ const WorkExpanded = ({ projects }) => {
             if (picture.startsWith('LINK:')) {
                 let link_url = picture.slice('5');
 
-                <a href={link_url} target='_blank'>{link_url}</a>
+                return (
+                    <a href={link_url} target='_blank'>{link_url}</a>
+                )
             }
             else if (picture.startsWith('SS2:')) {
                 let sub_name = picture.slice('4');
                 
-                <Sub2>{sub_name}</Sub2>
+                return (
+                    <Sub2>{sub_name}</Sub2>
+                )
             }
             else if (picture.startsWith('SS:')) {
                 let header_name = picture.slice('3');
-                
-                <MainSub>{header_name}</MainSub>
+
+                return (
+                    <MainSub>{header_name}</MainSub>
+                )
             }
             else if (picture.includes("/")) {
                 return (
