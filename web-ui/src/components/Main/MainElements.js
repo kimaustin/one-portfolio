@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { keyframes } from "styled-components";
 
 export const Container = styled.div`
     position: fixed;
@@ -22,12 +23,13 @@ export const Container = styled.div`
     img {
         /* max-height: 35vh; */
         position: absolute;
-        left: 49.75vw;
-        bottom: 54vh;
+        /* left: 49.75vw; */
+        right: 52vw;
+        bottom: 44vh;
         /* transform: translate(0, -52%); */
         /* width: 25vw; */
-        max-width: 30vw;
-        height: 43vh;
+        max-width: 32vw;
+        height: 53vh;
         /* max-height: 46vh; */
         /* max-width: 17.5vw; */
         /* width: 18vw; */
@@ -54,7 +56,7 @@ export const Header = styled.p`
     /* align-items: center; */
 
     position: absolute;
-    left: 49vw;
+    left: 46vw;
     /* top: calc(50% - 23.2vw); */
     /* bottom: 220px; */
     top: 50vh;
@@ -271,7 +273,7 @@ export const DownButton = styled(LinkRouter)`
 
 export const Desc = styled.div`
     position: fixed;
-    left: 50vw;
+    left: 46.8vw;
     bottom: 3.7vh;
 
     font-size: 13px;
@@ -752,3 +754,6 @@ export const BodySection = styled.div`
         margin-top: 43vh;
     } */
 `;
+
+
+

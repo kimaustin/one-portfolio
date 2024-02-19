@@ -4,7 +4,7 @@ use Mix.Config
 config :portfolio, Portfolio.Repo,
   username: "website",
   password: "website_pass",
-  database: "website_db",
+  database: "website_prod",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

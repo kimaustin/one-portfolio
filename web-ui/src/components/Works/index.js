@@ -227,7 +227,7 @@ const Works = ({ projects, aboutToggle }) => {
       filteredOut = true;
     }
 
-    if (project.id < 17) {
+    if (project.id < 19) {
       console.log("filtered out for " + project.id + ": " + filteredOut);
       // if (filterType == 0 || filterType == project.type) {
         return (
@@ -464,7 +464,7 @@ const Works = ({ projects, aboutToggle }) => {
       // variants={pageVariants2}
       // transition={pageTransition}
     >
-     {/*  <FiltersContainer 
+      {/* <FiltersContainer 
           as={motion.div} 
           initial="initial"
           animate="in"
@@ -516,7 +516,7 @@ const Works = ({ projects, aboutToggle }) => {
                 delay: 9 * 0.12,
               }}
               filterVal={filterType} fType={3} bgColor={'blue'} onClick={() => toggleWithType(3)}>UX</Filter>
-        </FiltersContainer>   */}
+        </FiltersContainer> */}
       {/* <Label as={motion.div} initial="initial"
           animate="in"
           exit="out"

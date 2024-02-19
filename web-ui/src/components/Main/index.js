@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { ThemeProvider } from "styled-components";
 import { motion } from "framer-motion";
 
-import { Container, BodySection, WorksImageContainer, BasicTxt1, BasicTxt2, SelectedLabel, Divider, Divider2, MainBio, Name, Kim, DownButton, FilterPreview, FilterContent, SDTypeHover, SDContent, UXTypeHover, UXContent, TypeHover, Marquee, ImageContainer, Styled, HoverName, ArrowAnim, SelectedWorks, WorkItem, ItemIndex, ItemDetail, SelectedListContainer, ButtonContainer, Header, MainImg, MainDesc, lilMove, Desc } from './MainElements';
+import { Container, BodySection, WorksImageContainer, BasicTxt1, BasicTxt2, SelectedLabel, Divider, Divider2, MainBio, Name, Kim, DownButton, FilterPreview, FilterContent, SDTypeHover, SDContent, UXTypeHover, UXContent, TypeHover, Marquee, ImageContainer, Styled, HoverName, ArrowAnim, SelectedWorks, WorkItem, ItemIndex, ItemDetail, SelectedListContainer, ButtonContainer, Header, HoverContainer, MainImg, MainDesc, lilMove, Desc } from './MainElements';
 
 const Main = ({projects}) => {
         
@@ -190,7 +190,7 @@ const Main = ({projects}) => {
                       Projects →
                     </DownButton>
                 </ButtonContainer>
-            </MainDesc>
+              </MainDesc> 
             </Header>
 
             <Desc
