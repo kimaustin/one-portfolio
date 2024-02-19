@@ -107,7 +107,8 @@ const WorkExpanded = ({ projects }) => {
             transition: {
                 type: "tween",
                 ease: [0.7, 0, 0.13, 1],
-                duration: 0.7,
+                duration: 0.5,
+                delay: 0
             }
         },  
     };
@@ -136,7 +137,7 @@ const WorkExpanded = ({ projects }) => {
                     href={link_url} target='_blank'
                     index={index}
                     isLast={is_last}
-                    as={motion.div}
+                    as={motion.a}
                     initial="initial"
                     animate="in"
                     exit="out"

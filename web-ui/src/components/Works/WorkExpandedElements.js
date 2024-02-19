@@ -123,14 +123,15 @@ export const PicDesc = styled.p`
     /* border: 2px solid blue; */
 
     margin-left: calc(25.15vw + 6.5rem);
-    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
     padding-left: 10%;
     padding-right: 10%;
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;
-    text-align: center;
+    text-align: justify;
+    text-justify: auto;
     align-items: center;
 `
 
@@ -142,7 +143,7 @@ export const Sub2 = styled.div`
     /* border: 2px solid blue; */
 
     margin-left: calc(25.15vw + 6.5rem);
-    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '1.5vh'};
     /* padding-top: 2rem; */
     padding-left: 10%;
     padding-right: 10%;
@@ -152,7 +153,7 @@ export const Sub2 = styled.div`
     letter-spacing: -0.05rem;
     text-align: center;
     align-items: center;
-    opacity: 0.65;
+    opacity: 0.6;
 `
 
 export const MainSub = styled.div`
@@ -164,6 +165,7 @@ export const MainSub = styled.div`
 
     margin-left: calc(25.15vw + 6.5rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    padding-top: 2vh;
     /* padding-top: 2rem; */
     padding-left: 10%;
     padding-right: 10%;
