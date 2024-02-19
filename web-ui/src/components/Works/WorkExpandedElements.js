@@ -95,7 +95,7 @@ export const PicContainer = styled.div`
     top: 0;
     margin-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
     /* margin-bottom: 2.45rem; */
-    /* margin-left: calc(25.15vw + 6.5rem); */
+    /* margin-left: calc(25vw + 6rem); */
     margin-left: calc(27vw + 3rem);
 
     /* border: 2px solid blue; */
@@ -121,7 +121,7 @@ export const PicDesc = styled.p`
 
     /* border: 2px solid blue; */
 
-    margin-left: calc(25vw + 6.25rem);
+    margin-left: calc(25vw + 6rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
     padding-left: 10%;
@@ -142,7 +142,7 @@ export const Sub2 = styled.div`
 
     /* border: 2px solid blue; */
 
-    margin-left: calc(25.15vw + 6.5rem);
+    margin-left: calc(25vw + 6rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '1.5vh'};
     /* padding-top: 2rem; */
     padding-left: 10%;
@@ -163,7 +163,7 @@ export const MainSub = styled.div`
 
     /* border: 2px solid blue; */
 
-    margin-left: calc(25.15vw + 6.5rem);
+    margin-left: calc(25vw + 6rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
     padding-top: 2vh;
     /* padding-top: 2rem; */
@@ -181,7 +181,7 @@ export const InLink = styled.a`
     width: calc(62.1% - 4rem);
     /* top: 0; */
 
-    /* margin-left: calc(25.15vw + 6.5rem); */
+    /* margin-left: calc(25vw + 6rem); */
     /* padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'}; */
     padding-left: 10%;
     padding-right: 10%;
@@ -201,7 +201,7 @@ export const LinkContainer = styled.div`
     /* border: 2px solid blue; */
     overflow-x: hidden;
 
-    margin-left: calc(25.15vw + 6.5rem);
+    margin-left: calc(25vw + 6rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
     /* padding-top: 2rem; */
     padding-left: 10%;
