@@ -4,7 +4,7 @@ import { useLocation, Redirect } from 'react-router-dom';
 import { ListContainer } from './WorkElements';
 import { motion } from "framer-motion";
 import MobileTopButton from '../MobileTopButton';
-import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc, Sub2, MainSub } from './WorkExpandedElements';
+import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc, Sub2, MainSub, InLink } from './WorkExpandedElements';
 import e from 'lax.js';
 // import { load_defaults } from '../../api';
 // import { restore_session } from '../../store';
@@ -132,21 +132,68 @@ const WorkExpanded = ({ projects }) => {
                 let link_url = picture.slice('5');
 
                 return (
-                    <a href={link_url} target='_blank'>{link_url}</a>
+                    <InLink
+                    href={link_url} target='_blank'
+                    index={index}
+                    isLast={is_last}
+                    as={motion.div}
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={imgVariants}
+                    transition={{
+                        type: "tween",
+                        ease: [0.7, 0, 0.13, 1],
+                        duration: 0.85,
+                        delay: (index + 1) * 0.1,
+                    }}>
+                        {link_url}
+                    </InLink>
                 )
             }
             else if (picture.startsWith('SS2:')) {
                 let sub_name = picture.slice('4');
                 
                 return (
-                    <Sub2>{sub_name}</Sub2>
+                    <Sub2
+                    index={index}
+                    isLast={is_last}
+                    as={motion.div}
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={imgVariants}
+                    transition={{
+                        type: "tween",
+                        ease: [0.7, 0, 0.13, 1],
+                        duration: 0.85,
+                        delay: (index + 1) * 0.1,
+                    }}>
+                        {sub_name}
+                    </Sub2>
                 )
             }
             else if (picture.startsWith('SS:')) {
                 let header_name = picture.slice('3');
 
                 return (
-                    <MainSub>{header_name}</MainSub>
+                    <MainSub
+                    index={index}
+                    isLast={is_last}
+                    as={motion.div}
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={imgVariants}
+                    transition={{
+                        type: "tween",
+                        ease: [0.7, 0, 0.13, 1],
+                        duration: 0.85,
+                        delay: (index + 1) * 0.1,
+                    }}
+                    >
+                        {header_name}
+                    </MainSub>
                 )
             }
             else if (picture.includes("/")) {
