@@ -132,6 +132,7 @@ export const PicDesc = styled.p`
     font-size: 1rem;
     text-align: justify;
     text-justify: auto;
+    line-height: 150%;
     align-items: center;
 `
 
@@ -199,6 +200,7 @@ export const LinkContainer = styled.div`
     top: 0;
 
     /* border: 2px solid blue; */
+    overflow-x: hidden;
 
     margin-left: calc(25.15vw + 6.5rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
