@@ -66,9 +66,9 @@ export const NonMobile1 = styled.ul`
        align-items: unset;
        /* position: fixed;
        left: 0; */
-       left: unset;
+       left: -1px;
        top: 10px;
-       width: 100%;
+       width: calc(100vw + 2px);
        height: 40px;
 
        grid-template-columns: 80px 1fr 1fr;
@@ -113,13 +113,12 @@ export const NaviLink = styled(LinkRouter)`
     @media screen and (max-width: 768px) {
         position: unset;
         width: 100%;
-        height: 100%:
+        height: 30px;
         margin-bottom: unset;
         padding-top: 6px;
         padding-right: unset;
         text-align: center;
         font-size: 15px;
-        
 
         &:hover {
             cursor: unset;
