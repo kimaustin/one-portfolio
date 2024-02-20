@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { useLocation } from 'react-router-dom';
-import { Container, NonMobile1, Mobile, Rotating, NaviLink} from './NavigationElements';
+import { Container, NonMobile1, Mobile, Rotating, NaviLink, InfoLink} from './NavigationElements';
 
 const Navigation = ({toggle, aboutToggle}) => {
 
@@ -25,7 +25,7 @@ const Navigation = ({toggle, aboutToggle}) => {
             <NonMobile1>
                 <NaviLink currpage={currPage} thispage={''} to="/">Home</NaviLink>
                 <NaviLink currpage={currPage} thispage={'works'} to="/works">Index</NaviLink>
-                <NaviLink currpage={currPage} thispage={'info'} to="/info" style={{position: 'fixed', bottom: '2.9vh', left: 'calc(3.5vw + .27rem)'}}>Info</NaviLink>
+                <InfoLink currpage={currPage} thispage={'info'} to="/info">Info</InfoLink>
             </NonMobile1>
             {/* <Mobile onClick={toggle}><Rotating>â†‘</Rotating></Mobile> */}
         </Container>

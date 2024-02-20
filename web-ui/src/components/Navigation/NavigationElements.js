@@ -20,7 +20,7 @@ export const Container = styled.div`
         left: 0;
         top: 0;
         width: calc(100vw);
-        height: 80px;
+        height: 40px;
         /* border-top: 1.5px solid #201D17;
         border-left: 1.5px solid #201D17;
         border-right: 1px solid #201D17; */
@@ -115,11 +115,68 @@ export const NaviLink = styled(LinkRouter)`
         width: 100%;
         height: 100%:
         margin-bottom: unset;
-        padding-top: 4px;
+        padding-top: 6px;
         padding-right: unset;
         text-align: center;
         font-size: 15px;
         
+
+        &:hover {
+            cursor: unset;
+            background: unset;
+            color: unset;
+        }
+    }
+`
+
+export const InfoLink = styled.div`
+    position: fixed;
+    width: 3rem;
+    height: 8.75rem;
+
+    bottom: 2.9vh;
+    left: calc(3.5vw + .27rem);
+    
+    margin-bottom: .75rem;
+    padding-top: 1.15rem;
+    padding-right: .75rem;
+
+    cursor: crosshair;
+
+    color: #201D17;
+    background: #FFFDFA;
+    color: ${({currpage, thispage}) => 
+        currpage === thispage && '#FDFEF5'
+    };
+    background: ${({currpage, thispage}) => 
+        currpage === thispage && '#201D17;'
+    };
+    border: 1px solid #201D17;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'JejuMyeongjo';
+
+    transition: 0.15s all ease-in-out;
+
+    &:hover {
+        /* cursor: url("/imgs/c_main.svg"), auto; */
+        cursor: pointer;
+        background: #201D17;
+        color: #FDFEF5;
+    }
+
+    @media screen and (max-width: 768px) {
+        position: unset;
+        width: 100%;
+        height: 100%:
+        margin-bottom: unset;
+        bottom: unset;
+        left: unset;
+        padding-top: 6px;
+        padding-right: unset;
+        text-align: center;
+        font-size: 15px;
 
         &:hover {
             cursor: unset;
