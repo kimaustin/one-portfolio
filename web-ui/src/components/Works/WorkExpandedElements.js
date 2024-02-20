@@ -116,12 +116,12 @@ export const PicContainer = styled.div`
 
 export const PicDesc = styled.p`
     position: relative;
-    width: calc(62.1% - 4rem);
+    width: calc(65vw);
     top: 0;
 
     /* border: 2px solid blue; */
 
-    margin-left: calc(25vw + 6rem);
+    margin-left: calc(27vw + 5rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
     padding-left: 10%;
@@ -129,10 +129,10 @@ export const PicDesc = styled.p`
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;
-    text-align: justify;
-    text-justify: auto;
-    line-height: 150%;
-    align-items: center;
+    /* text-align: justify; */
+    /* text-justify: auto; */
+    line-height: 155%;
+    /* align-items: center; */
 `
 
 export const Sub2 = styled.div`
@@ -165,13 +165,13 @@ export const MainSub = styled.div`
 
     margin-left: calc(25vw + 6rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
-    padding-top: 2vh;
+    padding-top: 3vh;
     /* padding-top: 2rem; */
     padding-left: 10%;
     padding-right: 10%;
 
     font-family: "JejuMyeongjo";
-    font-size: 1.7rem;
+    font-size: 1.75rem;
     text-align: center;
     align-items: center;
 `
