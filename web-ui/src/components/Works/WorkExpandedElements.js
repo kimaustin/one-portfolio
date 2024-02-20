@@ -22,7 +22,7 @@ export const Container = styled.div`
   overflow-x: hidden;
 
   @media screen and (max-width: 768px) {
-    /* margin-left: 16px; */
+    width: calc(100vw - 36px);
   }
 `;
 
@@ -43,6 +43,14 @@ export const LeftSection = styled.div`
     /* border: 1px solid blue; */
 
     overflow-x: hidden;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        width: 100%;
+        top: calc(64px + 3vh);
+        overflow-x: unset;
+        left: unset;
+    }
 `
 
 export const RightSection = styled.div`
@@ -64,6 +72,19 @@ export const RightSection = styled.div`
 
     overflow-y: scroll;
     overflow-x: hidden;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        left: unset;
+        top: 0;
+        justify-content: unset;
+        padding-top: 2vh;
+
+        width: 100%;
+        height: unset;
+
+        overflow-x: unset;
+    }
 `
 
 export const Images = styled.div`

@@ -23,7 +23,7 @@ const Navigation = ({toggle, aboutToggle}) => {
             // transition={pageTransition}
         >
             <NonMobile1>
-                <NaviLink currpage={currPage} thispage={''} to="/">A. Kim</NaviLink>
+                <NaviLink currpage={currPage} thispage={''} to="/">Home</NaviLink>
                 <NaviLink currpage={currPage} thispage={'works'} to="/works">Index</NaviLink>
                 <NaviLink currpage={currPage} thispage={'info'} to="/info" style={{position: 'fixed', bottom: '2.9vh', left: 'calc(3.5vw + .27rem)'}}>Info</NaviLink>
             </NonMobile1>

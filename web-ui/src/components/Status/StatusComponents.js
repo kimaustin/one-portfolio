@@ -12,19 +12,10 @@ export const Container = styled.div`
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 
-    /* @media screen and (max-width: 768px) {
-        left: 0;
-        width: 100vw;
-        height: calc(3.5vh + 1px);
-        bottom: 0;
-        overflow-x: hidden;     
-        border-right: 1px solid #201D17;
-        border-bottom: 1px solid #201D17;
-        border-top: 1px solid #201D17;
-        
+    @media screen and (max-width: 768px) {
         display: none;
         opacity: 0;
-    } */
+    }
 `
 
 export const BotSection = styled.div`

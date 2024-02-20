@@ -71,7 +71,7 @@ function App() {
         )}
       />
       <Status />
-      <WIP />
+      {/* <WIP /> */}
     </Router>
   );
 }

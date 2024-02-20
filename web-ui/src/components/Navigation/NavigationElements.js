@@ -20,15 +20,15 @@ export const Container = styled.div`
         left: 0;
         top: 0;
         width: calc(100vw);
-        height: 6vh;
+        height: 80px;
         /* border-top: 1.5px solid #201D17;
         border-left: 1.5px solid #201D17;
         border-right: 1px solid #201D17; */
         background: none;
         text-orientation: unset;
-        writing-mode: horizontal-tb;
-        font-size: 1.1rem;
-        letter-spacing: -.04rem;
+        writing-mode: unset;
+        font-size: 15px;
+        /* letter-spacing: -.04rem; */
         /* background: black; */
     }
 `;
@@ -60,6 +60,20 @@ export const NonMobile1 = styled.ul`
     left: calc(3.5vw);
     top: 3vh;
     width: 3.5rem;
+
+    @media screen and (max-width: 768px) {
+       display: inline-grid;
+       align-items: unset;
+       /* position: fixed;
+       left: 0; */
+       left: unset;
+       top: 10px;
+       width: 100%;
+       height: 100%;
+
+       grid-template-columns: 80px 1fr 1fr;
+       column-gap: 4%;
+    }
 `;
 
 export const NaviLink = styled(LinkRouter)`
@@ -85,7 +99,6 @@ export const NaviLink = styled(LinkRouter)`
 
     text-decoration: none;
     font-size: 1.2rem;
-    font-family: 'Iskoola';
     font-family: 'JejuMyeongjo';
 
     transition: 0.15s all ease-in-out;
@@ -95,6 +108,24 @@ export const NaviLink = styled(LinkRouter)`
         cursor: pointer;
         background: #201D17;
         color: #FDFEF5;
+    }
+
+    @media screen and (max-width: 768px) {
+        position: unset;
+        width: 100%;
+        height: 100%:
+        margin-bottom: unset;
+        padding-top: 4px;
+        padding-right: unset;
+        text-align: center;
+        font-size: 15px;
+        
+
+        &:hover {
+            cursor: unset;
+            background: unset;
+            color: unset;
+        }
     }
 `
 
