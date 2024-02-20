@@ -244,6 +244,7 @@ export const InLink = styled.a`
     padding-left: 6%;
     padding-right: 15%;
 
+
     font-family: "JejuMyeongjo";
     font-size: 1rem;
     text-align: center;
@@ -253,7 +254,9 @@ export const InLink = styled.a`
     @media screen and (max-width: 768px) {
        padding-right: 0;
        padding-left: 7.5%;
-       width: 100%;
+       /* width: 100%; */
+       padding-bottom: 3%;
+       padding-top: 1%;
     }
 `
 
