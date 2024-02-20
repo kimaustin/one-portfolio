@@ -23,6 +23,8 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     width: calc(100vw - 36px);
+    display: block;
+    overflow-y: scroll;
   }
 `;
 
@@ -50,6 +52,7 @@ export const LeftSection = styled.div`
         top: calc(64px + 3vh);
         overflow-x: unset;
         left: unset;
+        z-index: 997;
     }
 `
 

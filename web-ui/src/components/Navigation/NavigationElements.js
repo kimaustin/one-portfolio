@@ -69,7 +69,7 @@ export const NonMobile1 = styled.ul`
        left: unset;
        top: 10px;
        width: 100%;
-       height: 100%;
+       height: 40px;
 
        grid-template-columns: 80px 1fr 1fr;
        column-gap: 4%;
