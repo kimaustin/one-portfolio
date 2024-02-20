@@ -4,7 +4,7 @@ import { useLocation, Redirect } from 'react-router-dom';
 import { ListContainer } from './WorkElements';
 import { motion } from "framer-motion";
 import MobileTopButton from '../MobileTopButton';
-import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc, Sub2, MainSub, InLink, LinkContainer } from './WorkExpandedElements';
+import { Container, Header, NavButtons, PrevWork, NextWork, Back, Content, FixedContent, Title, TagsContainer, Tag, Details, Images, PicContainer, Thumbnails, ThumbnailSelector, PicScroll, LeftSection, Controls, RightSection, Label, PicDesc, Sub2, MainSub, InLink, LinkContainer, MobileBack } from './WorkExpandedElements';
 import e from 'lax.js';
 // import { load_defaults } from '../../api';
 // import { restore_session } from '../../store';
