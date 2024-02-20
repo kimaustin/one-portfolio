@@ -124,7 +124,7 @@ export const PicDesc = styled.p`
     margin-left: calc(27vw + 4rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
-    /* padding-left: 10%; */
+    padding-left: 5%;
     padding-right: 20%;
 
     font-family: "JejuMyeongjo";
@@ -145,14 +145,14 @@ export const Sub2 = styled.div`
     margin-left: calc(27vw + 4rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '1.5vh'};
     /* padding-top: 2rem; */
-    /* padding-left: 10%; */
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 15%;
 
     font-family: "JejuMyeongjo";
     font-size: 1.3rem;
-    letter-spacing: -0.05rem;
-    text-align: center;
-    align-items: center;
+    /* letter-spacing: -0.05rem; */
+    /* text-align: center; */
+    /* align-items: center; */
     opacity: 0.6;
 `
 
@@ -167,13 +167,13 @@ export const MainSub = styled.div`
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
     padding-top: 3vh;
     /* padding-top: 2rem; */
-    /* padding-left: 10%; */
-    padding-right: 20%;
+    padding-left: 5%;
+    /* padding-right: 20%; */
 
     font-family: "JejuMyeongjo";
     font-size: 1.75rem;
-    text-align: center;
-    align-items: center;
+    /* text-align: center; */
+    /* align-items: center; */
 `
 
 export const InLink = styled.a`
