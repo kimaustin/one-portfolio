@@ -125,8 +125,8 @@ export const PicDesc = styled.p`
     margin-left: calc(27vw + 4rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
-    padding-left: 10%;
-    padding-right: 9%;
+    padding-left: 7%;
+    padding-right: 14%;
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;
@@ -144,10 +144,10 @@ export const Sub2 = styled.div`
     /* border: 2px solid blue; */
 
     margin-left: calc(27vw + 4rem);
-    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '1.5vh'};
+    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '1.75vh'};
     /* padding-top: 2rem; */
-    padding-left: 6.75%;
-    padding-right: 17.5%;
+    padding-left: 6%;
+    padding-right: 15%;
 
     font-family: "JejuMyeongjo";
     font-size: 1.3rem;
@@ -165,10 +165,10 @@ export const MainSub = styled.div`
     /* border: 2px solid blue; */
 
     margin-left: calc(27vw + 4rem);
-    padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
-    padding-top: 3vh;
+    padding-bottom: 3.5vh;
+    padding-top: 4vh;
     /* padding-top: 2rem; */
-    padding-left: 4%;
+    padding-left: 2%;
     padding-right: 17.5%;
 
     font-family: "JejuMyeongjo";
