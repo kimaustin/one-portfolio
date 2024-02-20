@@ -203,6 +203,7 @@ export const Sub2 = styled.div`
 
     @media screen and (max-width: 768px) {
        padding-left: 0;
+       padding-top: 5%;
        margin-left: 4%;
        width: 100%;
     }
@@ -231,6 +232,8 @@ export const MainSub = styled.div`
        padding-left: 0;
        margin-left: 0;
        width: 100%;
+       padding-bottom: 1vh;
+       padding-top: 5vh;
     }
 `
 
@@ -244,7 +247,6 @@ export const InLink = styled.a`
     padding-left: 6%;
     padding-right: 15%;
 
-
     font-family: "JejuMyeongjo";
     font-size: 1rem;
     text-align: center;
@@ -255,8 +257,6 @@ export const InLink = styled.a`
        padding-right: 0;
        padding-left: 7.5%;
        /* width: 100%; */
-       padding-bottom: 3%;
-       padding-top: 1%;
     }
 `
 
@@ -579,6 +579,10 @@ export const NavButtons = styled.div`
     bottom: calc(4vh);
     cursor: pointer;
     /* border: 1.5px solid black; */
+
+    @media screen and (max-width: 768px) {
+        bottom: 3vh;
+    }
 `
 
 export const PrevWork = styled(LinkRouter)`
@@ -614,8 +618,8 @@ export const PrevWork = styled(LinkRouter)`
        text-align: center;
        padding-top: .55rem;
        left: -1px;
-       height: 40px;
-       width: 25vw;
+       height: 38px;
+       width: 22vw;
     }
 `
 
@@ -651,7 +655,7 @@ export const NextWork = styled(LinkRouter)`
        padding-left: .3rem;
        padding-top: .55rem;
        right: -1px;
-       height: 40px;
-       width: 25vw;
+       height: 38px;
+       width: 22vw;
     }
 `

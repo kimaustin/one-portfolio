@@ -39,11 +39,11 @@ export const Container = styled.div`
 
     @media screen and (max-width: 768px) {
         img {
-            right: -1vw;
+            right: 18px;
             top: 74px;
             max-width: unset;
             width: 55vw;
-            max-height: 30vh;
+            max-height: 28vh;
         }
     }
 `;
@@ -83,7 +83,7 @@ export const Header = styled.p`
   @media screen and (max-width: 768px) {
        left: 3px;
        top: 43vh;
-       font-size: 30vw;
+       font-size: 28vw;
     }
 `
 
@@ -281,7 +281,7 @@ export const DownButton = styled(LinkRouter)`
         /* left: 65.5%; */
         /* bottom: 8%; */
 
-        letter-spacing: -.035rem;
+        /* letter-spacing: -.035rem; */
         font-size: 1rem;
     }
 `;
@@ -301,8 +301,10 @@ export const Desc = styled.div`
     user-select: none; /* Standard syntax */
 
     @media screen and (max-width: 768px) {
-        left: 18px;
-        /* right: 16px; */
+        /* left: 18px; */
+        left: unset;
+        right: 18px;
+        bottom: 20px;
     }
 `
 

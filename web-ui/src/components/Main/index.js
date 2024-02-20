@@ -170,29 +170,28 @@ const Main = ({projects}) => {
                     {/* Austin Kim <span style={{fontFamily: "JejuMyeongjo", letterSpacing: "-1.1rem"}}>(호연)</span> */}
                     Welcome
             {/* </Header> */}
-            <MainDesc 
-                as={motion.div} initial="initial"
-                animate="in"
-                exit="out"
-                variants={descVariants}
-                transition={pageTransition}
-                >
-                  I'm Austin, a web/UX/UI/graphic designer with a background in Computer Science and Design
-                  <ButtonContainer
-                    as={motion.div}
-                    initial="initial"
-                    animate="in"
-                    exit="out"
-                    variants={btnVariants}
-                    transition={pageTransition}>
-                    <DownButton to={"/works"}>
-                      <b></b>
-                      Projects →
-                    </DownButton>
-                </ButtonContainer>
-              </MainDesc> 
+              <MainDesc 
+                  as={motion.div} initial="initial"
+                  animate="in"
+                  exit="out"
+                  variants={descVariants}
+                  transition={pageTransition}
+                  >
+                    I'm Austin, a new york based web/UX/UI/graphic designer interested in people, solutions, and experimentation.
+                    <ButtonContainer
+                      as={motion.div}
+                      initial="initial"
+                      animate="in"
+                      exit="out"
+                      variants={btnVariants}
+                      transition={pageTransition}>
+                      <DownButton to={"/works"}>
+                        <b></b>
+                        Projects →
+                      </DownButton>
+                  </ButtonContainer>
+                </MainDesc> 
             </Header>
-
             <Desc
                     as={motion.div}
                     initial="initial"
