@@ -43,7 +43,12 @@ export const Container = styled.div`
     filter: blur(-2x);
     -webkit-filter: blur(-1.5px);
     /* cursor: url("/imgs/c_main.svg"), auto; */
-  cursor: crosshair;
+    cursor: crosshair;
+
+    @media screen and (max-width: 768px) {
+       overflow-x: hidden;
+       overflow-y: scroll;
+    }
 
 `
 
@@ -132,8 +137,13 @@ export const Content = styled.div`
     z-index: 999;
     text-align: left;
 
-    @media screen and (max-height: 640px) {
-        display: none;
+    @media screen and (max-width: 768px) {
+       left: 18px;
+       top: 100px;
+       width: calc(100vw - 38px);
+
+       overflow-x: hidden;
+       overflow-y: scroll;
     }
 `
 
@@ -144,6 +154,10 @@ export const Desc = styled.p`
     /* letter-spacing: -.03rem; */
     line-height: 130%;
     padding-bottom: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const Styled1 = styled.span`
@@ -166,6 +180,14 @@ export const Styled2 = styled.p`
     width: calc(31.5vw - 6rem);
     right: calc(7.15vw + 3.55rem);
 
+    @media screen and (max-width: 768px) {
+       right: 18px;
+       text-align: right;
+       width: unset;
+       bottom: 3rem;
+       padding-bottom: .3rem;
+    }
+
 `
 
 export const Name = styled.div`
@@ -186,6 +208,12 @@ export const Name = styled.div`
     /* transform: skew(-12deg); */
     /* color: black; */
     /* writing-mode: vertical-rl; */
+
+    @media screen and (max-width: 768px) {
+       left: 18px;
+       padding-left: 0;
+       top: 76px;
+    }
 `
 
 export const Resume = styled.div`
@@ -230,6 +258,11 @@ export const ProfileContainer = styled.div`
         width: 100%;
         transform: translateY(-32%);
     }
+
+    @media screen and (max-width: 768px) {
+       display: none;
+    }
+
 `
 
 export const ResumeDownload = styled.div`
@@ -299,12 +332,16 @@ export const Links = styled.div`
     /* padding-left: 1rem; */
     overflow: hidden;
     z-index: 997;
+
+    @media screen and (max-width: 768px) {
+       left: 18px;
+    }
 `
 
 export const Social = styled.p`
     /* display: list-item; */
     z-index: 990;
-    width: fit-content;
+    width: auto;
     /* width: 100%; */
     /* border-top: 1px solid #201D17; */
     /* margin-bottom: .1rem; */
@@ -342,4 +379,8 @@ export const Social = styled.p`
         opacity: 0.5;  
     }
 
+
+    @media screen and (max-width: 768px) {
+       padding-bottom: 12px;
+    }
 `

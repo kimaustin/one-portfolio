@@ -355,6 +355,7 @@ const WorkExpanded = ({ projects }) => {
                 variants={leftVariants}
                 transition={leftTransition}>
                     {/* {work.id}  */}
+                    <MobileBack to="/works">Back</MobileBack>
                     <Title>{work.name}</Title>
                     <Label>OVERVIEW</Label>
                     <Details>{work.desc}</Details>

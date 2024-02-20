@@ -22,7 +22,9 @@ export const Container = styled.div`
   overflow-x: hidden;
 
   @media screen and (max-width: 768px) {
-    width: calc(100vw - 36px);
+    width: calc(100vw + 1rem);
+    padding-right: calc(1rem + 18px);
+    padding-left: 18px;
     display: block;
     overflow-y: scroll;
   }
@@ -47,11 +49,13 @@ export const LeftSection = styled.div`
     overflow-x: hidden;
 
     @media screen and (max-width: 768px) {
-        position: relative;
-        width: 100%;
-        top: calc(64px + 3vh);
+        position: unset;
+        width: calc(100vw - 40px);
+        margin-top: calc(60px);
+        margin-bottom: 3vh;
         overflow-x: unset;
         left: unset;
+        height: fit-content;
         z-index: 997;
     }
 `
@@ -77,16 +81,19 @@ export const RightSection = styled.div`
     overflow-x: hidden;
 
     @media screen and (max-width: 768px) {
-        position: relative;
+        position: unset;
         left: unset;
-        top: 0;
+        /* top: 10vh; */
         justify-content: unset;
-        padding-top: 2vh;
+        padding-bottom: unset;
+        padding-top: unset;
+        margin-bottom: 10vh;
 
         width: 100%;
-        height: unset;
+        height: fit-content;
 
-        overflow-x: unset;
+        overflow-y: clip;
+        overflow-x: hidden;
     }
 `
 
@@ -137,6 +144,13 @@ export const PicContainer = styled.div`
         max-width: 100%;
         /* border: 1px solid #201D17; */
     }
+
+    @media screen and (max-width: 768px) {
+       margin-left: 0;
+       align-items: unset;
+       text-align: left;
+       width: 100%;
+    }
 `
 
 export const PicDesc = styled.p`
@@ -158,6 +172,13 @@ export const PicDesc = styled.p`
     /* text-justify: auto; */
     line-height: 155%;
     /* align-items: center; */
+
+    @media screen and (max-width: 768px) {
+       padding-left: 0;
+       padding-right: 15%;
+       margin-left: 7.5%;
+       width: 100%;
+    }
 `
 
 export const Sub2 = styled.div`
@@ -179,6 +200,12 @@ export const Sub2 = styled.div`
     /* text-align: center; */
     /* align-items: center; */
     opacity: 0.6;
+
+    @media screen and (max-width: 768px) {
+       padding-left: 0;
+       margin-left: 4%;
+       width: 100%;
+    }
 `
 
 export const MainSub = styled.div`
@@ -199,6 +226,12 @@ export const MainSub = styled.div`
     font-size: 1.75rem;
     /* text-align: center; */
     /* align-items: center; */
+
+    @media screen and (max-width: 768px) {
+       padding-left: 0;
+       margin-left: 0;
+       width: 100%;
+    }
 `
 
 export const InLink = styled.a`
@@ -215,6 +248,13 @@ export const InLink = styled.a`
     font-size: 1rem;
     text-align: center;
     align-items: center;
+    white-space: nowrap;
+
+    @media screen and (max-width: 768px) {
+       padding-right: 0;
+       padding-left: 7.5%;
+       width: 100%;
+    }
 `
 
 export const LinkContainer = styled.div`
@@ -231,6 +271,13 @@ export const LinkContainer = styled.div`
     /* padding-top: 2rem; */
     padding-left: 10%;
     padding-right: 10%;
+
+    @media screen and (max-width: 768px) {
+       padding-left: 0;
+       margin-left: 0;
+       text-overflow; ellipsis;
+       width: 100%;
+    }
 `
 
 export const Controls = styled.div`
@@ -243,6 +290,15 @@ export const Controls = styled.div`
     left: calc(7.15vw + 3rem);
 
     /* border: 1px solid blue; */
+
+    @media screen and (max-width: 768px) {
+        top: unset;
+        bottom: 4vh;
+        height: fit-content;
+        /* height: 10vh; */
+        width: 100vw;
+        /* left: 5%;     */
+    }
 `
 
 export const Header = styled.div`
@@ -292,14 +348,21 @@ export const Back = styled(LinkRouter)`
     }
 
     @media screen and (max-width: 768px) {
-        /* margin-left: -.255px; */
-        /* height: 5vh;
-        margin-top: -.4vh;
-        margin-left: 8px;
-        padding: .75vh;
-        padding-right: 2vw;
-        padding-left: 2vw;
-        font-size: 3vh; */
+        display: none;
+    }
+`
+
+export const MobileBack = styled(LinkRouter)`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        font-size: 1rem;
+        font-family: "JejuMyeongjo";
+        color: #201D17;
+        left: 18px;
+        top: 80px;
+        text-decoration: none;
     }
 `
 
@@ -356,9 +419,7 @@ export const Title = styled.h1`
     letter-spacing: -.1vh;
 
     @media screen and (max-width: 768px) {
-        /* margin-top: 0rem;
-        font-size: 4rem;
-        position: relative; */
+        padding-top: 8vh;
     }
 `
 
@@ -540,6 +601,19 @@ export const PrevWork = styled(LinkRouter)`
         /* color: white; */
         opacity: 0.6;
     }
+
+    @media screen and (max-width: 768px) {
+        border: 1px solid #201D17;
+    background: #FFFDFA;
+       position: fixed;
+       /* padding-right: 1rem; */
+       padding-left: .55rem;
+       text-align: center;
+       padding-top: .55rem;
+       left: -1px;
+       height: 40px;
+       width: 25vw;
+    }
 `
 
 export const NextWork = styled(LinkRouter)`
@@ -561,5 +635,20 @@ export const NextWork = styled(LinkRouter)`
         /* background: black; */
         /* color: white; */
         opacity: 0.6;
+    }
+
+    @media screen and (max-width: 768px) {
+       border: 1px solid #201D17;
+        background: #FFFDFA;
+
+       position: fixed;
+       /* padding-right: 1rem; */
+       /* padding-left: 1rem; */
+       text-align: center;
+       padding-left: .3rem;
+       padding-top: .55rem;
+       right: -1px;
+       height: 40px;
+       width: 25vw;
     }
 `

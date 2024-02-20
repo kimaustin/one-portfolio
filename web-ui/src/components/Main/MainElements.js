@@ -37,6 +37,15 @@ export const Container = styled.div`
         /* border: 1px solid #201D17; */
     }
 
+    @media screen and (max-width: 768px) {
+        img {
+            right: 15vw;
+            top: 90px;
+            width: 60vw;
+            height: 30vh;
+        }
+    }
+
 `;
 
 export const Header = styled.p`
@@ -70,6 +79,11 @@ export const Header = styled.p`
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   
+  @media screen and (max-width: 768px) {
+       left: 0;
+       top: 40vh;
+       font-size: 30vw;
+    }
 `
 
 export const MainImg = styled.div`
@@ -284,6 +298,11 @@ export const Desc = styled.div`
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+
+    @media screen and (max-width: 768px) {
+        left: unset;
+        right: 16px;
+    }
 `
 
 export const lilMove = styled.p`

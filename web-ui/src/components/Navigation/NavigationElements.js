@@ -20,7 +20,7 @@ export const Container = styled.div`
         left: 0;
         top: 0;
         width: calc(100vw);
-        height: 40px;
+        height: 41px;
         /* border-top: 1.5px solid #201D17;
         border-left: 1.5px solid #201D17;
         border-right: 1px solid #201D17; */
@@ -69,7 +69,7 @@ export const NonMobile1 = styled.ul`
        left: -1px;
        top: 10px;
        width: calc(100vw + 2px);
-       height: 40px;
+       height: 41px;
 
        grid-template-columns: 80px 1fr 1fr;
        column-gap: 4%;
@@ -113,7 +113,7 @@ export const NaviLink = styled(LinkRouter)`
     @media screen and (max-width: 768px) {
         position: unset;
         width: 100%;
-        height: 30px;
+        height: 31px;
         margin-bottom: unset;
         padding-top: 6px;
         padding-right: unset;
@@ -168,7 +168,7 @@ export const InfoLink = styled.div`
     @media screen and (max-width: 768px) {
         position: unset;
         width: 100%;
-        height: 100%:
+        height: 31px:
         margin-bottom: unset;
         bottom: unset;
         left: unset;

@@ -349,15 +349,12 @@ export const WorksContainer = styled.div`
   z-index: ${(props) => props.zVal};
   /* z-index: 998; */
 
-  @media screen and (max-width: 811px) {
-    /* display: inline; */
-    /* position: relative; */
-    /* margin-top: 5vh; */
-    /* width: calc(100vw + 1rem);
-    height: calc(90.5vh + 4.5px);
-    left: 0;
-    top: 0;
-    bottom: 0; */
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+    padding-left: 20px;
+    /* left: 8px; */
+    /* width: 100vw; */
+    padding-right: calc(1rem + 20px);
   }
 `;
 
@@ -404,6 +401,11 @@ export const WorkContents = styled(LinkRouter)`
     cursor: crosshair;
 
     /* cursor: crosshair; */
+  }
+
+  @media screen and (max-width: 768px) {
+    left: 0;
+    /* margin: unset; */
   }
 `;
 
@@ -459,22 +461,11 @@ export const WorkItem = styled.div`
     scale: 1.0125;
   }
 
-  @media screen and (max-width: 811px) {
-    /* margin-left: 18px; */
-    display: flex;
-    grid-template-rows: unset;
-    grid-template-columns: unset;
-    height: 27%;
-    /* padding: 0; */
-    /* padding: .9rem .85rem .9rem .85rem; */
+  @media screen and (max-width: 768px) {
+    height: 22%;
+    width: 100%;
     padding: 0.9rem;
     font-size: 1.75rem;
-    cursor: url("/imgs/c_open2.svg"), auto;
-
-    &:hover {
-      color: unset;
-      background: unset;
-    }
   }
 `;
 
@@ -502,21 +493,9 @@ export const WorkIndex = styled.div`
     /* border: 4.5px solid #FFFDFA; */
   }
 
-  @media screen and (max-width: 811px) {
-    /* display: none; */
-    font-size: 1.1rem;
-    font-family: "SharpGrotesk";
-    position: absolute;
-    display: block;
-    vertical-align: bottom;
-    align-items: end;
-    /* bottom: 1.8rem; */
-    margin-top: calc(19vh - 0.9rem);
-    /* margin-top: 9rem; */
-    /* margin-left: 0;
-        font-weight: bold;
-        padding: 0.25rem .5rem 0.25rem .5rem; */
-    /* font-size: 1.1rem; */
+  @media screen and (max-width: 768px) {
+    font-size: .7rem;
+    padding-left: 3%;
   }
 `;
 
@@ -536,37 +515,15 @@ export const WorkName = styled.p`
   text-decoration: none;
   white-space: nowrap;
 
-  /* ${({ noHover }) =>
-    noHover &&
-    `
-            // cursor: default;
-            // opacity: 0;
-            // z-index: -1;
-            color: red;
-    `} */
-
-  @media screen and (max-width: 811px) {
-    /* width: 90vw; */
-    width: calc(50% - 0.6rem);
-    padding-right: 0.5rem;
-    padding-top: 1.35rem;
-    display: inline;
-    /* left: 16px; */
-    /* font-size: 2rem; */
-    /* hyphens: auto; */
-    word-break: keep-all;
-    white-space: normal;
-    line-height: 105%;
-    z-index: 999;
-    font-size: 1.5rem;
-
-    /* ${WorkItem}:hover & {
-            z-index: 999;
-            color: ${({ selected }) => (selected ? "black" : "grey")};
-            margin-left: 0;
-            transition: all 0.3s ease-in-out;
-        }; */
-  } ;
+  @media screen and (max-width: 768px) {
+      max-width: 80%;
+      padding-left: 12%;
+      word-break: keep-all;
+      white-space: normal;
+      line-height: 108%;
+      z-index: 999;
+      font-size: 1.5rem;
+  }
 `;
 
 export const WorkType = styled.p`
@@ -689,20 +646,7 @@ export const TagsContainer = styled.div`
     /* background: #FFFDFA; */
   }
 
-  @media screen and (max-width: 811px) {
-    /* outline: 1px solid blue; */
-    width: 45%;
-    height: 10%;
-    padding-left: 0rem;
-    padding-top: 0;
-    text-align: left;
-
-    vertical-align: bottom;
-    margin-top: 6.5rem;
-    position: absolute;
-    left: 1rem;
-    /* bottom: 1rem; */
-    display: block;
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -716,17 +660,9 @@ export const ProjectTag = styled.p`
   line-height: 138%;
   letter-spacing: -0.05rem;
 
-  @media screen and (max-width: 811px) {
-    bottom: 0;
-    /* position: absolute; */
-    display: grid;
-    font-family: "SpaceMono";
-    font-size: 1rem;
-    line-height: 110%;
-    letter-spacing: -0.05rem;
-    text-align: left;
-    /* display: none; */
-  }
+  @media screen and (max-width: 768px) {
+       display: none;
+    }
 `;
 
 export const TagsDivider = styled.div`
@@ -737,6 +673,10 @@ export const TagsDivider = styled.div`
   height: 100%;
 
   border-left: 1px solid #201d17;
+
+  @media screen and (max-width: 768px) {
+       display: none;
+    }
 `;
 
 export const TagsContainer2 = styled.div`
