@@ -94,6 +94,7 @@ export const Images = styled.div`
 export const PicContainer = styled.div`
     top: 0;
     margin-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
+    margin-top: 1vh;
     /* margin-bottom: 2.45rem; */
     /* margin-left: calc(25vw + 6rem); */
     margin-left: calc(27vw + 3rem);
@@ -124,8 +125,8 @@ export const PicDesc = styled.p`
     margin-left: calc(27vw + 4rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.2vh'};
     /* padding-top: 2rem; */
-    padding-left: 7.5%;
-    padding-right: 17.5%;
+    padding-left: 10%;
+    padding-right: 9%;
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;
@@ -145,7 +146,7 @@ export const Sub2 = styled.div`
     margin-left: calc(27vw + 4rem);
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '1.5vh'};
     /* padding-top: 2rem; */
-    padding-left: 7.5%;
+    padding-left: 6.75%;
     padding-right: 17.5%;
 
     font-family: "JejuMyeongjo";
@@ -167,7 +168,7 @@ export const MainSub = styled.div`
     padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'};
     padding-top: 3vh;
     /* padding-top: 2rem; */
-    padding-left: 7.5%;
+    padding-left: 4%;
     padding-right: 17.5%;
 
     font-family: "JejuMyeongjo";
@@ -183,8 +184,8 @@ export const InLink = styled.a`
 
     /* margin-left: calc(25vw + 6rem); */
     /* padding-bottom: ${({ isLast }) => isLast ? '3.6vh' : '2.5vh'}; */
-    /* padding-left: 10%; */
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 
     font-family: "JejuMyeongjo";
     font-size: 1rem;
