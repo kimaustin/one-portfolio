@@ -9,27 +9,29 @@ export const Container = styled.div`
     height: 100vh;
     width: 3.5rem;
 
-    /* cursor: url("/imgs/c_main.svg"), auto; */
     cursor: crosshair;
-
 
     text-orientation: mixed;
     writing-mode: vertical-rl;
 
     @media screen and (max-width: 811px) {
-        left: 0;
-        top: 0;
+        /* position: unset; */
+        /* left: 0; */
+        /* top: 0; */
         width: calc(100vw);
-        height: 41px;
+        height: calc(31px + 10px);
         /* border-top: 1.5px solid #201D17;
         border-left: 1.5px solid #201D17;
         border-right: 1px solid #201D17; */
-        background: none;
+        /* background: none; */
+        
         text-orientation: unset;
         writing-mode: unset;
         font-size: 15px;
         /* letter-spacing: -.04rem; */
-        /* background: black; */
+        background: #201D17;
+        /* border: 1px solid black; */
+        filter: drop-shadow(0px -50px 130px #201D17);
     }
 `;
 
@@ -64,15 +66,16 @@ export const NonMobile1 = styled.ul`
     @media screen and (max-width: 768px) {
        display: inline-grid;
        align-items: unset;
+       position: unset;
        /* position: fixed;
        left: 0; */
-       left: -1px;
-       top: 10px;
+       /* left: -1px; */
+       /* top: 10px; */
        width: calc(100vw + 2px);
        height: 41px;
 
-       grid-template-columns: 80px 1fr 1fr;
-       column-gap: 4%;
+       grid-template-columns: 70px 2fr 1fr;
+       /* column-gap: 4%; */
     }
 `;
 
@@ -113,22 +116,18 @@ export const NaviLink = styled(LinkRouter)`
     @media screen and (max-width: 768px) {
         position: unset;
         width: 100%;
-        height: 31px;
+        height: 41px;
         margin-bottom: unset;
-        padding-top: 6px;
+        padding-top: 11px;
         padding-right: unset;
-        text-align: center;
+        /* text-align: center; */
+        padding-left: 15px;
         font-size: 15px;
-
-        &:hover {
-            cursor: unset;
-            background: unset;
-            color: unset;
-        }
+        border-right: unset;
     }
 `
 
-export const InfoLink = styled.div`
+export const InfoLink = styled(LinkRouter)`
     position: fixed;
     width: 3rem;
     height: 8.75rem;
@@ -167,21 +166,18 @@ export const InfoLink = styled.div`
 
     @media screen and (max-width: 768px) {
         position: unset;
+        /* right: 0; */
         width: 100%;
-        height: 31px:
+        height: 41px;
         margin-bottom: unset;
         bottom: unset;
         left: unset;
-        padding-top: 6px;
-        padding-right: unset;
-        text-align: center;
+        padding-top: 11px;
+        padding-right: 15px;
+        padding-bottom: unset;
+        text-align: right;
         font-size: 15px;
-
-        &:hover {
-            cursor: unset;
-            background: unset;
-            color: unset;
-        }
+        z-index: 999;
     }
 `
 

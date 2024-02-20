@@ -39,13 +39,13 @@ export const Container = styled.div`
 
     @media screen and (max-width: 768px) {
         img {
-            right: 15vw;
-            top: 90px;
-            width: 60vw;
-            height: 30vh;
+            right: -1vw;
+            top: 74px;
+            max-width: unset;
+            width: 55vw;
+            max-height: 30vh;
         }
     }
-
 `;
 
 export const Header = styled.p`
@@ -79,9 +79,10 @@ export const Header = styled.p`
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   
+
   @media screen and (max-width: 768px) {
-       left: 0;
-       top: 40vh;
+       left: 3px;
+       top: 43vh;
        font-size: 30vw;
     }
 `
@@ -300,8 +301,8 @@ export const Desc = styled.div`
     user-select: none; /* Standard syntax */
 
     @media screen and (max-width: 768px) {
-        left: unset;
-        right: 16px;
+        left: 18px;
+        /* right: 16px; */
     }
 `
 

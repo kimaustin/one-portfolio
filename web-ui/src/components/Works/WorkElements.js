@@ -350,7 +350,7 @@ export const WorksContainer = styled.div`
   /* z-index: 998; */
 
   @media screen and (max-width: 768px) {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 20px;
     /* left: 8px; */
     /* width: 100vw; */
