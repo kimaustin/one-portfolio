@@ -82,7 +82,7 @@ export const Header = styled.p`
 
   @media screen and (max-width: 768px) {
        left: 3px;
-       top: 43vh;
+       top: 30vh;
        font-size: 28vw;
     }
 `
