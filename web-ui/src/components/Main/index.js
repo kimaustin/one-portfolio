@@ -192,7 +192,7 @@ const Main = ({projects}) => {
                   </ButtonContainer>
                 </MainDesc> 
             </Header>
-            <Desc
+            {/* <Desc
                     as={motion.div}
                     initial="initial"
                     animate="in"
@@ -200,7 +200,7 @@ const Main = ({projects}) => {
                     variants={labelVariants}
                     transition={pageTransition}>
                     Portfolio v1
-            </Desc>
+            </Desc> */}
 
             <img 
                 as={motion.img} initial="initial"

@@ -20,6 +20,7 @@ import Close from "./components/About";
 import MobileToggle from "./components/MobileToggle";
 import WIP from "./components/WIP";
 import { Provider } from "react-redux";
+import Versions from "./components/Versions";
 
 //Our App Components
 function App() {
@@ -70,6 +71,7 @@ function App() {
           </AnimatePresence>
         )}
       />
+      <Versions />
       <Status />
       {/* <WIP /> */}
     </Router>
